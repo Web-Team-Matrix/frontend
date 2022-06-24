@@ -8,6 +8,7 @@ import { PageMembersEdward } from './pages/members/PageMembersEdward';
 import { PageMembersEli } from './pages/members/PageMembersEli';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { Separator } from './components/Separator';
+import PageMembersOrhan from './pages/members/PageMembersOrhan';
 
 function App() {
 	return (
@@ -36,10 +37,17 @@ function App() {
 						path="/members/edward/*"
 						element={<PageMembersEdward />}
 					></Route>
-					<Route
+          
+					<Route     					
 						path="/members/eli/*"
 						element={<PageMembersEli/>}
+          ></Route>     
+          
+					<Route
+						path="/members/orhan/*"
+						element={<PageMembersOrhan />}
 					></Route>
+          
 				</Route>
 				<Route path="/research" element={<PageResearch />} />
 				<Route path="/showcases" element={<PageShowcases />} />
