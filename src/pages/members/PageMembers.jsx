@@ -9,8 +9,6 @@ export const PageMembers = () => {
 				<Separator />
 				<NavLink to="edward">Edward</NavLink>
 				<Separator />
-				<NavLink to="edward2">Edward2</NavLink>
-				<Separator />
 				<NavLink to="eli">Eli</NavLink>
 			</nav>
 			<Outlet />
