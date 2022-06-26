@@ -6,6 +6,7 @@ import { PageShowcases } from './pages/PageShowcases';
 import { PageMembersInfo } from './pages/members/PageMembersInfo';
 import { PageMembersEdward } from './pages/members/PageMembersEdward';
 import { PageMembersEdward2 } from './pages/members/PageMembersEdward2';
+import { PageMembersHayat } from './pages/members/PageMembersHayat';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 import { Separator } from './components/Separator';
 
@@ -14,10 +15,15 @@ function App() {
 		<div className="App">
 			<h1>Web Team Matrix</h1>
 			<nav className="navMain">
-			<NavLink className="navlink" to="/welcome">Welcome</NavLink><Separator/> 
-			<NavLink to="/members">Members</NavLink><Separator/>
-			<NavLink to="/research">Research</NavLink><Separator/>
-			<NavLink to="/showcases">Showcases</NavLink>
+				<NavLink className="navlink" to="/welcome">
+					Welcome
+				</NavLink>
+				<Separator />
+				<NavLink to="/members">Members</NavLink>
+				<Separator />
+				<NavLink to="/research">Research</NavLink>
+				<Separator />
+				<NavLink to="/showcases">Showcases</NavLink>
 			</nav>
 			<Routes>
 				<Route path="/welcome" element={<PageWelcome />} />
@@ -34,6 +40,10 @@ function App() {
 					<Route
 						path="/members/edward2/*"
 						element={<PageMembersEdward2 />}
+					></Route>
+					<Route
+						path="/members/hayat/*"
+						element={<PageMembersHayat />}
 					></Route>
 				</Route>
 				<Route path="/research" element={<PageResearch />} />
